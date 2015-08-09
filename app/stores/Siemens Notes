@@ -1,0 +1,6 @@
+Siemens Notes
+
+Automatic migration (not lightweight)
+Core Data will attempt to locate the source and mapping models in the application bundles, and perform a migration:
+  -With a mapping model, migration can still happen automatically (which is what NSMigratePersistentStoresAutomaticallyOption is for)
+  -Core Data will open two stores–the source and the target–and copy all entities in memory. So the memory consumed by the app depends on the amount of data in the store.
